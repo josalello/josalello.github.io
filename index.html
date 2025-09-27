@@ -3,37 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>josalello</title>
+  <title>Inicio · josalello</title>
 
   <!-- Bootstrap 5.3 (CDN oficial) -->
-  <link 
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-    rel="stylesheet" 
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-    crossorigin="anonymous"
-  >
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+        crossorigin="anonymous">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="#">josalello</a>
+      <a class="navbar-brand fw-bold" href="index.html">josalello</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="bg-primary text-white text-center py-5">
+  <header class="hero text-white text-center py-5">
     <div class="container">
       <h1 class="display-4">¡Hola, mundo desde GitHub Pages!</h1>
       <p class="lead">Publicado con GitHub Pages usando Bootstrap 5</p>
@@ -42,33 +42,55 @@
   </header>
 
   <!-- Contenido -->
-  <main id="contenido" class="container my-5">
-    <div class="row">
+  <main id="contenido" class="container section-pad">
+    <div class="row g-4">
       <div class="col-md-4">
-        <h2>🚀 Fácil de publicar</h2>
-        <p>GitHub Pages te permite poner tu web online sin complicaciones. Solo subes tu HTML y ya está.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="h4">🚀 Fácil de publicar</h2>
+            <p class="mb-0">GitHub Pages te permite poner tu web online sin complicaciones. Subes tu HTML y listo.</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
-        <h2>🎨 Con estilo</h2>
-        <p>Gracias a <strong>Bootstrap 5</strong> tienes un diseño moderno, adaptable y responsive en pocos minutos.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="h4">🎨 Con estilo</h2>
+            <p class="mb-0">Con <strong>Bootstrap 5</strong> tienes un diseño moderno, adaptable y responsive en minutos.</p>
+          </div>
+        </div>
       </div>
       <div class="col-md-4">
-        <h2>💻 Código abierto</h2>
-        <p>GitHub Pages está pensado para proyectos abiertos, portafolios y páginas personales.</p>
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h2 class="h4">💻 Código abierto</h2>
+            <p class="mb-0">Ideal para proyectos abiertos, portafolios y páginas personales.</p>
+          </div>
+        </div>
       </div>
     </div>
+
+    <hr class="my-5">
+
+    <section>
+      <h2 class="h4 mb-3">Últimos cambios</h2>
+      <ul>
+        <li>Navbar con enlaces a “Sobre mí” y “Contacto”.</li>
+        <li>Footer fijo al final de la ventana.</li>
+        <li>Hoja de estilos propia con pequeños detalles.</li>
+      </ul>
+    </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white text-center py-3">
-    <p class="mb-0">&copy; 2025 josalello · Creado con ❤️ y GitHub Pages</p>
+  <!-- Footer fijo -->
+  <footer class="site-footer bg-dark text-white text-center d-flex align-items-center justify-content-center fixed-bottom">
+    <p class="mb-0 py-3 px-2">&copy; 2025 josalello · Creado con ❤️ y GitHub Pages</p>
   </footer>
 
-  <!-- Bootstrap JS (para navbar y otros componentes) -->
-  <script 
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-    crossorigin="anonymous">
-  </script>
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 </html>

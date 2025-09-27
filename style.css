@@ -1,0 +1,35 @@
+/* --- Ajustes globales --- */
+:root {
+  --footer-h: 72px; /* alto aprox. del footer */
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  padding-bottom: var(--footer-h); /* evita que el footer tape el contenido */
+}
+
+/* Navbar activa */
+.navbar .nav-link.active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+/* Héroe */
+.hero {
+  background: linear-gradient(180deg, #0d6efd 0%, #3d8bfd 100%);
+}
+
+/* Utilidades */
+.section-pad {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Footer */
+.site-footer {
+  min-height: var(--footer-h);
+}
